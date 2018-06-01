@@ -10,24 +10,55 @@ import UIKit
 import SideMenu
 import JTHamburgerButton
 
-class HomeScreenViewController: UIViewController
-{
-    var leftMenuNavController: UISideMenuNavigationController!
-    @IBOutlet weak var chatButton: UIButton!
-
+class HomeScreenViewController: UIViewController, SegueProtocol{
+    func coachSegue() {
+        performSegue(withIdentifier: "toCoachTab", sender: self)
+    }
+    func notificationSegue() {
+        performSegue(withIdentifier: "toNotificationTab", sender: self)
+    }
+    func menuSegue() {
+        performSegue(withIdentifier: "toMenuTab", sender: self)
+        
+    }
+    
+   // var leftMenuNavController: UISideMenuNavigationController!
+    
+    @IBOutlet var tabBarView: TabBar!
+    
+    @IBOutlet var chatButtonTab: UIButton!
+    
+    
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        setupRounded(button: chatButton)
+//        setupRounded(button: chatButton)
+        //NavBar Image Added
+        let logo = UIImage(named: "benefit_logo")
+        let imageView = UIImageView(image:logo)
+        imageView.contentMode = .scaleAspectFit
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        self.navigationItem.titleView = imageView
+        tabBarView.delegate = self
+        
+        chatButtonTab.layer.borderColor = UIColor.white.cgColor
+        chatButtonTab.layer.borderWidth = 2
+        chatButtonTab.layer.cornerRadius = chatButtonTab.frame.size.width/2
+        chatButtonTab.layer.masksToBounds = true
+        tabBarView.homeButtonPressed((Any).self)
+        
+       
 
     }
     
-    override func viewWillAppear(_ animated: Bool)
-    {
-        setupCustomNavigationBar()
-    }
+    
+//    override func viewWillAppear(_ animated: Bool)
+//    {
+//        setupCustomNavigationBar()
+//    }
 
- 
+
     @IBAction func workoutsButtonPressed(_ sender: UIButton)
     {
         print("Workout")
@@ -59,6 +90,10 @@ class HomeScreenViewController: UIViewController
     {
         print("Dash Disappearing")
     }
+    
+    
+   
+    
 }
 
 extension UIApplication
@@ -69,42 +104,42 @@ extension UIApplication
     }
 }
 
-extension UIViewController: MyNavigationBarDelegate, UISideMenuNavigationControllerDelegate
-{
-    func setupCustomNavigationBar()
-    {
-        let navBar = NavBar()
-        //self.navigationItem.hidesBackButton = true
-        navBar.frame = (self.navigationController?.navigationBar.frame)!
-        let height = (self.navigationController?.navigationBar.frame.height)!
-        let width = (self.navigationController?.navigationBar.frame.width)!
-        
-        UIApplication.shared.keyWindow?.addSubview(navBar)
-        
-        UIApplication.shared.statusBarView?.backgroundColor = UIColor(hex: "FAFAFA")
-        
-        let heightConstraint = NSLayoutConstraint(item: navBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height)
-        let widthConstraint = NSLayoutConstraint(item: navBar, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width)
-        navBar.addConstraints([heightConstraint, widthConstraint])
-        navBar.delegate = self
-        setupSideBarMenu()
-    }
-   
-    func setupSideBarMenu()
-    {
-        SideMenuManager.default.menuPresentMode = .menuSlideIn
-    }
-    
-    func hamButtonWasTriggered()
-    {
-        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
-        let VC = storyboard.instantiateViewController(withIdentifier: "LeftSideBar")
-        parent?.present(VC, animated: true, completion: nil)
-    }
-    
-    func hamButtonWasDismissed()
-    {
-       
-    }
-}
+//extension UIViewController: MyNavigationBarDelegate, UISideMenuNavigationControllerDelegate
+//{
+//    func setupCustomNavigationBar()
+//    {
+//        let navBar = NavBar()
+//        //self.navigationItem.hidesBackButton = true
+//        navBar.frame = (self.navigationController?.navigationBar.frame)!
+//        let height = (self.navigationController?.navigationBar.frame.height)!
+//        let width = (self.navigationController?.navigationBar.frame.width)!
+//
+//        UIApplication.shared.keyWindow?.addSubview(navBar)
+//
+//        UIApplication.shared.statusBarView?.backgroundColor = UIColor(hex: "FAFAFA")
+//
+//        let heightConstraint = NSLayoutConstraint(item: navBar, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: height)
+//        let widthConstraint = NSLayoutConstraint(item: navBar, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width)
+//        navBar.addConstraints([heightConstraint, widthConstraint])
+//        navBar.delegate = self
+//        setupSideBarMenu()
+//    }
+//
+//    func setupSideBarMenu()
+//    {
+//        SideMenuManager.default.menuPresentMode = .menuSlideIn
+//    }
+//
+//    func hamButtonWasTriggered()
+//    {
+//        let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+//        let VC = storyboard.instantiateViewController(withIdentifier: "LeftSideBar")
+//        parent?.present(VC, animated: true, completion: nil)
+//    }
+//
+//    func hamButtonWasDismissed()
+//    {
+//
+//    }
+//}
 
