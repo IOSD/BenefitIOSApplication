@@ -10,18 +10,36 @@ import UIKit
 
 class SelectMenuViewController: UIViewController, SegueProtocol{
     func coachSegue() {
-        performSegue(withIdentifier: "toCoachFromSelect", sender: self)
+        //performSegue(withIdentifier: "toCoachTab", sender: self)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "coachViewController") as! CoachTabViewController
+        
+        self.present(newViewController, animated: true, completion: nil)
     }
     func notificationSegue() {
-        performSegue(withIdentifier: "toNotifFromSelect", sender: self)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "notifiViewController") as! NotificationTabViewController
+        
+        self.present(newViewController, animated: true, completion: nil)
+        
     }
     func menuSegue() {
-        print("at Select menu")
+       print("menu Module")
         
     }
     func homeSegue() {
-        performSegue(withIdentifier: "toHomeFromSelect", sender: self)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MyDashboard") as! HomeScreenViewController
+        
+        let navController : UINavigationController = UINavigationController(rootViewController: newViewController)
+        
+        self.present(navController, animated: true, completion: nil)
+        
+        
     }
+
     
 
     @IBOutlet var tabBarView: TabBar!
@@ -35,7 +53,9 @@ class SelectMenuViewController: UIViewController, SegueProtocol{
         chatButton.layer.borderWidth = 2
         chatButton.layer.cornerRadius = chatButton.frame.size.width/2
         chatButton.layer.masksToBounds = true
-        tabBarView.menuButtonPressed((Any).self)
+       // tabBarView.menuButtonPressed((Any).self)
+        tabBarView.buttonPressed(UIButton.self())
+        tabBarView.menuButtonPressed()
     
     }
 

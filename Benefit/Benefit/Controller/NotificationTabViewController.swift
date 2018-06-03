@@ -10,17 +10,33 @@ import UIKit
 
 class NotificationTabViewController: UIViewController, SegueProtocol{
     func coachSegue() {
-         performSegue(withIdentifier: "toCoachFromNotif", sender: self)
+        //performSegue(withIdentifier: "toCoachTab", sender: self)
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "coachViewController") as! CoachTabViewController
+        
+        self.present(newViewController, animated: true, completion: nil)
     }
     func notificationSegue() {
-       print("Nothing just at Notif")
+        
+      print("At Notification")
+        
     }
     func menuSegue() {
-        performSegue(withIdentifier: "toSelectFromNotif", sender: self)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "menuViewController") as! SelectMenuViewController
+        
+        self.present(newViewController, animated: true, completion: nil)
         
     }
     func homeSegue() {
-        performSegue(withIdentifier: "toHomeFromNotif", sender: self)
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "MyDashboard") as! HomeScreenViewController
+        
+        let navController : UINavigationController = UINavigationController(rootViewController: newViewController)
+        
+        self.present(navController, animated: true, completion: nil)
+        
         
     }
 
@@ -35,7 +51,9 @@ class NotificationTabViewController: UIViewController, SegueProtocol{
         chatButton.layer.borderWidth = 2
         chatButton.layer.cornerRadius = chatButton.frame.size.width/2
         chatButton.layer.masksToBounds = true
-        tabBarView.notificationButtonPressed((Any).self)
+      //  tabBarView.notificationButtonPressed((Any).self)
+        tabBarView.buttonPressed(UIButton.self())
+        tabBarView.notificationButtonPressed()
         
     }
     
