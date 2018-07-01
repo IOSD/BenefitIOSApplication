@@ -47,6 +47,7 @@ class MyNutritionViewController: UIViewController, SegueProtocol{
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var tabBarView: TabBar!
+    
     let rows = ["PremiumFeatureCell", "CalendarCell", "TodaysNutritionPlan", "NutritionDiet", "CommentCell", "SavedMealCell"]
     let mealBackgroundColors = [UIColor(hex: "E0A662"), UIColor(hex: "73C997"), UIColor(hex: "457B97"), UIColor(hex: "C64A4D"), UIColor(hex: "2A373E")]
     let meals = ["Breakfast", "Mid-morning", "Lunch", "Snacks", "Dinner"]
@@ -62,6 +63,8 @@ class MyNutritionViewController: UIViewController, SegueProtocol{
         setupTableView()
         tabBarView.delegate = self
         tabBarView.buttonPressed(UIButton.self())
+        
+        
     }
 
     //display alerts
@@ -184,7 +187,7 @@ extension MyNutritionViewController: UITableViewDataSource, CommentMealDelegate
             cell.leftLogoImageView.image = #imageLiteral(resourceName: "ic_my_nutrition_24dp")
             cell.lockImageView.image = UIImage()
             cell.titleLabel.textColor = UIColor.black
-            cell.titleLabel.text = "MY NUTRITION PLAN"
+            cell.titleLabel.text = "Nutrition"
             return cell
         }
         else if indexPath.section == 1

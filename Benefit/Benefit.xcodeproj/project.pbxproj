@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		3A1F4E1C20BF316900B2702E /* NotificationTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1F4E1B20BF316900B2702E /* NotificationTabViewController.swift */; };
+		3A36917D20D19D5700F3CAD5 /* Meals.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A36917C20D19D5700F3CAD5 /* Meals.xib */; };
+		3A36918120D19D8B00F3CAD5 /* Meals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A36918020D19D8B00F3CAD5 /* Meals.swift */; };
 		3A7EECDD20C081E500DD3D27 /* TabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A7EECDC20C081E500DD3D27 /* TabBar.xib */; };
 		3A7EECDF20C0856200DD3D27 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A7EECDE20C0856200DD3D27 /* TabBar.swift */; };
+		3A9CF88D20D8FEC600313168 /* TrackingGpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A9CF88C20D8FEC500313168 /* TrackingGpsViewController.swift */; };
+		3A9CF88F20D91E4B00313168 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9CF88E20D91E4B00313168 /* CoreLocation.framework */; };
+		3ACD9D2720E238CB00529EC7 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACD9D2620E238CB00529EC7 /* Food.swift */; };
 		3AD898CAB9144CA542DECF5D /* Pods_Benefit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 322D8DA0A84036F3B256F6D5 /* Pods_Benefit.framework */; };
 		3ADDDBDB20BFD4500077CC7E /* CoachTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDDBDA20BFD4500077CC7E /* CoachTabViewController.swift */; };
 		3ADDDBDD20BFD45E0077CC7E /* SelectMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADDDBDC20BFD45E0077CC7E /* SelectMenuViewController.swift */; };
 		3AE7B5DF20C6F88200D5B96B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3AE7B5DE20C6F88200D5B96B /* GoogleService-Info.plist */; };
+		3AE8B29920D12777006D7D2C /* TrackAndLog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8B29820D12777006D7D2C /* TrackAndLog.storyboard */; };
+		3AE8B29B20D128A5006D7D2C /* Challenges.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AE8B29A20D128A5006D7D2C /* Challenges.storyboard */; };
+		3AE8B29D20D12D87006D7D2C /* TrackAndLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B29C20D12D87006D7D2C /* TrackAndLogViewController.swift */; };
+		3AE8B2A220D12E5E006D7D2C /* MealLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B2A120D12E5E006D7D2C /* MealLogViewController.swift */; };
+		3AE8B2A420D12EB1006D7D2C /* TrackMyActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AE8B2A320D12EB1006D7D2C /* TrackMyActivityViewController.swift */; };
 		591A29982037F1C2009454D4 /* MeasurementScreens.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591A29972037F1C2009454D4 /* MeasurementScreens.storyboard */; };
 		591A299F20380696009454D4 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A299E20380696009454D4 /* UpdateProfileViewController.swift */; };
 		591A29A1203806A9009454D4 /* MeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591A29A0203806A9009454D4 /* MeasurementViewController.swift */; };
@@ -79,12 +89,22 @@
 /* Begin PBXFileReference section */
 		322D8DA0A84036F3B256F6D5 /* Pods_Benefit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Benefit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A1F4E1B20BF316900B2702E /* NotificationTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTabViewController.swift; sourceTree = "<group>"; };
+		3A36917C20D19D5700F3CAD5 /* Meals.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Meals.xib; sourceTree = "<group>"; };
+		3A36918020D19D8B00F3CAD5 /* Meals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Meals.swift; sourceTree = "<group>"; };
 		3A7EECDC20C081E500DD3D27 /* TabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabBar.xib; sourceTree = "<group>"; };
 		3A7EECDE20C0856200DD3D27 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		3A9CF88C20D8FEC500313168 /* TrackingGpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingGpsViewController.swift; sourceTree = "<group>"; };
+		3A9CF88E20D91E4B00313168 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3ACD9D2620E238CB00529EC7 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		3ADDDBDA20BFD4500077CC7E /* CoachTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTabViewController.swift; sourceTree = "<group>"; };
 		3ADDDBDC20BFD45E0077CC7E /* SelectMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectMenuViewController.swift; sourceTree = "<group>"; };
 		3AE1B86920C930A800D6A337 /* Benefit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Benefit.entitlements; sourceTree = "<group>"; };
 		3AE7B5DE20C6F88200D5B96B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3AE8B29820D12777006D7D2C /* TrackAndLog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TrackAndLog.storyboard; sourceTree = "<group>"; };
+		3AE8B29A20D128A5006D7D2C /* Challenges.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Challenges.storyboard; sourceTree = "<group>"; };
+		3AE8B29C20D12D87006D7D2C /* TrackAndLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackAndLogViewController.swift; sourceTree = "<group>"; };
+		3AE8B2A120D12E5E006D7D2C /* MealLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealLogViewController.swift; sourceTree = "<group>"; };
+		3AE8B2A320D12EB1006D7D2C /* TrackMyActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackMyActivityViewController.swift; sourceTree = "<group>"; };
 		591A29972037F1C2009454D4 /* MeasurementScreens.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeasurementScreens.storyboard; sourceTree = "<group>"; };
 		591A299E20380696009454D4 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		591A29A0203806A9009454D4 /* MeasurementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementViewController.swift; sourceTree = "<group>"; };
@@ -157,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A9CF88F20D91E4B00313168 /* CoreLocation.framework in Frameworks */,
 				3AD898CAB9144CA542DECF5D /* Pods_Benefit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -164,6 +185,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A36917120D1943100F3CAD5 /* Track and Log */ = {
+			isa = PBXGroup;
+			children = (
+				3A36918020D19D8B00F3CAD5 /* Meals.swift */,
+				3A36917C20D19D5700F3CAD5 /* Meals.xib */,
+			);
+			path = "Track and Log";
+			sourceTree = "<group>";
+		};
+		3AE8B2A020D12DAE006D7D2C /* Track and Log */ = {
+			isa = PBXGroup;
+			children = (
+				3AE8B29C20D12D87006D7D2C /* TrackAndLogViewController.swift */,
+				3AE8B2A320D12EB1006D7D2C /* TrackMyActivityViewController.swift */,
+				3A9CF88C20D8FEC500313168 /* TrackingGpsViewController.swift */,
+				3AE8B2A120D12E5E006D7D2C /* MealLogViewController.swift */,
+				3ACD9D2620E238CB00529EC7 /* Food.swift */,
+			);
+			path = "Track and Log";
+			sourceTree = "<group>";
+		};
 		591A299D20380509009454D4 /* Measurement Screens */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,11 +242,12 @@
 			isa = PBXGroup;
 			children = (
 				59C408942025DB6B004569C5 /* StartupScreens.storyboard */,
-				3A7EECDC20C081E500DD3D27 /* TabBar.xib */,
 				59647047200A26CF00F9357F /* Dashboard.storyboard */,
+				59C4089A2025E087004569C5 /* NutritionScreens.storyboard */,
+				3AE8B29820D12777006D7D2C /* TrackAndLog.storyboard */,
+				3AE8B29A20D128A5006D7D2C /* Challenges.storyboard */,
 				59C408962025DBE9004569C5 /* LoginScreens.storyboard */,
 				59C408982025E00C004569C5 /* WorkoutScreens.storyboard */,
-				59C4089A2025E087004569C5 /* NutritionScreens.storyboard */,
 				591A29972037F1C2009454D4 /* MeasurementScreens.storyboard */,
 			);
 			path = Storyboards;
@@ -232,8 +275,8 @@
 		595CE3AA203825970086CE39 /* Comment Cell */ = {
 			isa = PBXGroup;
 			children = (
-				592AF7102035B27A00B8AF53 /* CommentCell.xib */,
 				592AF7122035B33400B8AF53 /* CommentCell.swift */,
+				592AF7102035B27A00B8AF53 /* CommentCell.xib */,
 				59631B882038384B002653B9 /* SavedMealCell.xib */,
 			);
 			path = "Comment Cell";
@@ -273,8 +316,11 @@
 			isa = PBXGroup;
 			children = (
 				592E1B582030B50E006FFBF9 /* Storyboards */,
+				3A7EECDC20C081E500DD3D27 /* TabBar.xib */,
+				3A7EECDE20C0856200DD3D27 /* TabBar.swift */,
 				59C4088D2025D42C004569C5 /* Card View Cell */,
 				59C4088E2025D43D004569C5 /* Premium Feature Cell */,
+				3A36917120D1943100F3CAD5 /* Track and Log */,
 				592E1B5B2030B9BF006FFBF9 /* Nutrition */,
 				592AF70D20353E6C00B8AF53 /* MyCalendar */,
 				59C4088F2025D44C004569C5 /* Custom Navigation Bar */,
@@ -301,9 +347,9 @@
 				3ADDDBDC20BFD45E0077CC7E /* SelectMenuViewController.swift */,
 				59C4088B2025D3E3004569C5 /* Workout Screens */,
 				59C4088C2025D3F3004569C5 /* Nutrition Screens */,
+				3AE8B2A020D12DAE006D7D2C /* Track and Log */,
 				591A299D20380509009454D4 /* Measurement Screens */,
 				5962D39D203A7F410081D4B2 /* SideBarViewController.swift */,
-				3A7EECDE20C0856200DD3D27 /* TabBar.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -405,6 +451,7 @@
 		D804225604BCA14F0787571D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A9CF88E20D91E4B00313168 /* CoreLocation.framework */,
 				322D8DA0A84036F3B256F6D5 /* Pods_Benefit.framework */,
 			);
 			name = Frameworks;
@@ -503,13 +550,16 @@
 				597DC8252024B00F00468960 /* NutritionArticleViewCell.xib in Resources */,
 				59647068200A982200F9357F /* Mark Simonson - Proxima Nova Alt Regular-webfont.ttf in Resources */,
 				59C408972025DBE9004569C5 /* LoginScreens.storyboard in Resources */,
+				3A36917D20D19D5700F3CAD5 /* Meals.xib in Resources */,
 				59647066200A97F900F9357F /* Mark Simonson - Proxima Nova Semibold-webfont.ttf in Resources */,
+				3AE8B29B20D128A5006D7D2C /* Challenges.storyboard in Resources */,
 				5947774C201C898F0003FD7F /* WorkoutInfo.xib in Resources */,
 				59647049200A26CF00F9357F /* Dashboard.storyboard in Resources */,
 				592E1B5A2030B592006FFBF9 /* NutritionDiet.xib in Resources */,
 				59AF292F201A214B008EDD95 /* PremiumFeatureCell.xib in Resources */,
 				592AF70C20353E6800B8AF53 /* DayCell.xib in Resources */,
 				59B24603201B99D500A096CD /* WorkoutRoutine.xib in Resources */,
+				3AE8B29920D12777006D7D2C /* TrackAndLog.storyboard in Resources */,
 				592E1B552030A6B5006FFBF9 /* RestDayCell.xib in Resources */,
 				5947774A201C6F820003FD7F /* WorkoutDescription.xib in Resources */,
 				59C4089B2025E087004569C5 /* NutritionScreens.storyboard in Resources */,
@@ -611,6 +661,7 @@
 			files = (
 				592AF70A20353E6800B8AF53 /* MonthCell.swift in Sources */,
 				59B24601201B6FE900A096CD /* HIITViewController.swift in Sources */,
+				3AE8B2A420D12EB1006D7D2C /* TrackMyActivityViewController.swift in Sources */,
 				5957ED802017CC9A00870A02 /* WorkoutsSectionViewController.swift in Sources */,
 				59AF8894201DA4C00051F5F9 /* MyWorkoutsScreenViewController.swift in Sources */,
 				592E1B4820301D42006FFBF9 /* MyDate.swift in Sources */,
@@ -620,9 +671,12 @@
 				597DC8212024A7B400468960 /* NutritionArticleScreenViewController.swift in Sources */,
 				5962D3A0203AA8D70081D4B2 /* MyNutritionScreenLockedViewController.swift in Sources */,
 				59E9EA4D2034884A0005B2B0 /* MyNutritionViewController.swift in Sources */,
+				3AE8B29D20D12D87006D7D2C /* TrackAndLogViewController.swift in Sources */,
+				3ACD9D2720E238CB00529EC7 /* Food.swift in Sources */,
 				3A1F4E1C20BF316900B2702E /* NotificationTabViewController.swift in Sources */,
 				59F24B232023956B009DA20F /* PremiumFeatureCell.swift in Sources */,
 				591A29A1203806A9009454D4 /* MeasurementViewController.swift in Sources */,
+				3AE8B2A220D12E5E006D7D2C /* MealLogViewController.swift in Sources */,
 				3ADDDBDD20BFD45E0077CC7E /* SelectMenuViewController.swift in Sources */,
 				59FC7D20201484F900C89D3C /* HomeScreenViewController.swift in Sources */,
 				59AC648D2026D97700C139CE /* Triangle.swift in Sources */,
@@ -634,6 +688,7 @@
 				5978613120120F4000C2B5D4 /* SetupProfileScreenViewController.swift in Sources */,
 				597DC8272024B03300468960 /* NutritionArticleViewCell.swift in Sources */,
 				597DC8232024ABE200468960 /* FullSizedImageViewCell.swift in Sources */,
+				3A9CF88D20D8FEC600313168 /* TrackingGpsViewController.swift in Sources */,
 				592AF70F203548B100B8AF53 /* NutritionDiet.swift in Sources */,
 				591E18AD20394C7D00FD167F /* SecondaryCell.swift in Sources */,
 				5978612D2011C32B00C2B5D4 /* StartupScreenViewController.swift in Sources */,
@@ -645,6 +700,7 @@
 				592AF70B20353E6800B8AF53 /* DayCell.swift in Sources */,
 				59F24B2520239BE4009DA20F /* NutritionScreenViewController.swift in Sources */,
 				59F24B1F20238567009DA20F /* CardViewCell.swift in Sources */,
+				3A36918120D19D8B00F3CAD5 /* Meals.swift in Sources */,
 				59647044200A26CF00F9357F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Oswald-Medium.ttf">
+            <string>Oswald-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Meals" customModule="Benefit" customModuleProvider="target">
+            <connections>
+                <outlet property="caloriesLabel" destination="slr-8c-MXT" id="B6q-jE-oJd"/>
+                <outlet property="carbsLabel" destination="3UY-sl-kAG" id="i9W-M8-t3P"/>
+                <outlet property="fatLabel" destination="Uo5-zt-AG4" id="RsY-k3-RrK"/>
+                <outlet property="mealView" destination="xrF-KH-z2X" id="BxK-Yd-DXw"/>
+                <outlet property="proteinLabel" destination="AV2-fI-6oW" id="PVc-s3-qRq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xrF-KH-z2X">
+            <rect key="frame" x="0.0" y="0.0" width="854" height="124"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AfG-m6-e9r">
+                    <rect key="frame" x="0.0" y="-4" width="779" height="128"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9D5-1a-ht8">
+                            <rect key="frame" x="0.0" y="0.0" width="855" height="134"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LaT-Ac-Iby">
+                                    <rect key="frame" x="0.0" y="10" width="855" height="114"/>
+                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Pm-5O-Lof">
+                                    <rect key="frame" x="0.0" y="10" width="855" height="114"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dpw-Ug-Chr">
+                                            <rect key="frame" x="0.0" y="0.0" width="213" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="270" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slr-8c-MXT">
+                                                    <rect key="frame" x="59" y="0.0" width="33.5" height="34.5"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="slr-8c-MXT" firstAttribute="top" secondItem="Dpw-Ug-Chr" secondAttribute="top" id="lOz-fP-dAj"/>
+                                                <constraint firstItem="slr-8c-MXT" firstAttribute="leading" secondItem="Dpw-Ug-Chr" secondAttribute="leading" constant="59" id="z8Q-bN-lu1"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KA4-dB-bhd">
+                                            <rect key="frame" x="214" y="0.0" width="213" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3UY-sl-kAG">
+                                                    <rect key="frame" x="55" y="0.0" width="103" height="34.5"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="3UY-sl-kAG" firstAttribute="top" secondItem="KA4-dB-bhd" secondAttribute="top" id="1c8-oI-y5t"/>
+                                                <constraint firstItem="3UY-sl-kAG" firstAttribute="centerX" secondItem="KA4-dB-bhd" secondAttribute="centerX" id="3Ii-1H-N0Y"/>
+                                                <constraint firstItem="3UY-sl-kAG" firstAttribute="leading" secondItem="KA4-dB-bhd" secondAttribute="leading" constant="55" id="FfH-vz-239"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDm-r1-0cd">
+                                            <rect key="frame" x="428" y="0.0" width="213" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV2-fI-6oW">
+                                                    <rect key="frame" x="72" y="0.0" width="68" height="57"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PROTEIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jqg-EK-Yfg">
+                                                    <rect key="frame" x="72" y="53" width="68" height="36"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="AV2-fI-6oW" firstAttribute="leading" secondItem="Jqg-EK-Yfg" secondAttribute="leading" id="7lq-n3-w4K"/>
+                                                <constraint firstItem="AV2-fI-6oW" firstAttribute="top" secondItem="nDm-r1-0cd" secondAttribute="top" id="Mf3-Yo-270"/>
+                                                <constraint firstItem="AV2-fI-6oW" firstAttribute="trailing" secondItem="Jqg-EK-Yfg" secondAttribute="trailing" id="aB6-Fb-CUq"/>
+                                                <constraint firstItem="Jqg-EK-Yfg" firstAttribute="top" secondItem="nDm-r1-0cd" secondAttribute="top" constant="53" id="fIk-TG-Qft"/>
+                                                <constraint firstAttribute="bottom" secondItem="AV2-fI-6oW" secondAttribute="bottom" constant="57" id="hvy-81-3VA"/>
+                                                <constraint firstItem="AV2-fI-6oW" firstAttribute="leading" secondItem="nDm-r1-0cd" secondAttribute="leading" constant="72" id="k5E-r4-Sha"/>
+                                                <constraint firstItem="AV2-fI-6oW" firstAttribute="centerX" secondItem="nDm-r1-0cd" secondAttribute="centerX" id="kfU-lE-hHj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Jqg-EK-Yfg" secondAttribute="bottom" constant="25" id="ype-LP-Zbu"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RZ1-1H-Juc">
+                                            <rect key="frame" x="642" y="0.0" width="213" height="114"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4g" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uo5-zt-AG4">
+                                                    <rect key="frame" x="88" y="0.0" width="38" height="53"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="23"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FAT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vBi-m8-Dcg">
+                                                    <rect key="frame" x="95.5" y="44" width="22.5" height="27"/>
+                                                    <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="17"/>
+                                                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Oswald-Medium" family="Oswald" pointSize="28"/>
+                                                    </variation>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Uo5-zt-AG4" firstAttribute="centerX" secondItem="vBi-m8-Dcg" secondAttribute="centerX" id="1Ab-bQ-7Rv"/>
+                                                <constraint firstItem="Uo5-zt-AG4" firstAttribute="leading" secondItem="RZ1-1H-Juc" secondAttribute="leading" constant="88" id="Kky-xL-0hu"/>
+                                                <constraint firstItem="vBi-m8-Dcg" firstAttribute="top" secondItem="RZ1-1H-Juc" secondAttribute="top" constant="44" id="OCI-oX-Tw3"/>
+                                                <constraint firstAttribute="bottom" secondItem="Uo5-zt-AG4" secondAttribute="bottom" constant="61" id="gir-CG-ReZ"/>
+                                                <constraint firstItem="Uo5-zt-AG4" firstAttribute="centerX" secondItem="RZ1-1H-Juc" secondAttribute="centerX" id="mKf-Hm-9PT"/>
+                                                <constraint firstItem="Uo5-zt-AG4" firstAttribute="top" secondItem="RZ1-1H-Juc" secondAttribute="top" id="nP0-zS-Brk"/>
+                                                <constraint firstItem="vBi-m8-Dcg" firstAttribute="centerY" secondItem="RZ1-1H-Juc" secondAttribute="centerY" id="zlp-FX-kmH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="LaT-Ac-Iby" firstAttribute="top" secondItem="9D5-1a-ht8" secondAttribute="top" constant="10" id="05K-1m-sgi"/>
+                                <constraint firstItem="7Pm-5O-Lof" firstAttribute="leading" secondItem="LaT-Ac-Iby" secondAttribute="leading" id="Hu8-Cz-Rb1"/>
+                                <constraint firstAttribute="trailing" secondItem="LaT-Ac-Iby" secondAttribute="trailing" id="IUf-KA-ogq"/>
+                                <constraint firstItem="7Pm-5O-Lof" firstAttribute="centerY" secondItem="9D5-1a-ht8" secondAttribute="centerY" id="POu-ro-8fq"/>
+                                <constraint firstItem="7Pm-5O-Lof" firstAttribute="bottom" secondItem="LaT-Ac-Iby" secondAttribute="bottom" id="Ysd-Ph-Ax6"/>
+                                <constraint firstItem="7Pm-5O-Lof" firstAttribute="top" secondItem="LaT-Ac-Iby" secondAttribute="top" id="fEc-A7-sBw"/>
+                                <constraint firstItem="LaT-Ac-Iby" firstAttribute="leading" secondItem="9D5-1a-ht8" secondAttribute="leading" id="mBj-U2-xGH"/>
+                                <constraint firstItem="LaT-Ac-Iby" firstAttribute="trailing" secondItem="7Pm-5O-Lof" secondAttribute="trailing" id="w6D-WS-30u"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="9D5-1a-ht8" secondAttribute="trailing" constant="-76" id="M9N-ij-AFy"/>
+                        <constraint firstAttribute="bottom" secondItem="9D5-1a-ht8" secondAttribute="bottom" constant="-6" id="Olu-z6-74z"/>
+                        <constraint firstItem="9D5-1a-ht8" firstAttribute="top" secondItem="AfG-m6-e9r" secondAttribute="top" id="cDg-vF-v4U"/>
+                        <constraint firstItem="9D5-1a-ht8" firstAttribute="leading" secondItem="AfG-m6-e9r" secondAttribute="leading" id="z9N-kw-gN9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="mxy-RL-yDc" firstAttribute="trailing" secondItem="AfG-m6-e9r" secondAttribute="trailing" constant="75" id="46X-ba-MXr"/>
+                <constraint firstItem="AfG-m6-e9r" firstAttribute="top" secondItem="xrF-KH-z2X" secondAttribute="top" constant="-4" id="USs-Xh-e1y"/>
+                <constraint firstItem="AfG-m6-e9r" firstAttribute="bottom" secondItem="mxy-RL-yDc" secondAttribute="bottom" id="kDh-iC-VP3"/>
+                <constraint firstItem="AfG-m6-e9r" firstAttribute="leading" secondItem="xrF-KH-z2X" secondAttribute="leading" id="ywF-EG-FaR"/>
+            </constraints>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="mxy-RL-yDc"/>
+            <point key="canvasLocation" x="-68" y="-342"/>
+        </view>
+    </objects>
+</document>
